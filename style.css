@@ -103,6 +103,97 @@ nav .right a span{
     width: 390px;
 }
 
+
+/*Skills section*/
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.7px solid #d3d3d3;
+    border-radius: 5px;
+}
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px){
+    /*hero section*/
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px){
+    .hero-section{
+        flex-direction: column-reverse;
+        
+    }
+    .hero-section .head-shot img{
+        width: 300px;
+    }
+}
+
+
 @media (max-width: 412px){
     nav{
         padding: 0 20px;
@@ -117,6 +208,22 @@ nav .right a span{
         color: var(--text-color);
         background-color: var(--background-color);
         padding: 0;
+    }
+    /*hero section*/
+    .hero-section {
+        padding: 0 20px;
+    }
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+
+    /*skills section*/
+
+    .skills-section {
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell span{
+        font-size: 16px;
     }
 }
 
