@@ -17,6 +17,8 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a{
@@ -144,28 +146,88 @@ nav .right a span{
     font-size: 18px;
 }
 
+/*hero testimony*/
+.testimony-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.testimony-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.testimony-section .group .person-details{
+    text-align: center;
+    flex: 2;
+}
+.testimony-section .group .person-details img{
+    width: 200px;
+    aspect-ratio: 1 /1 ;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimony-section .group .person-details p:last-child{
+    font-weight: normal;
+}
 
 
+.testimony-section .group .text{
+    flex: 8;
+}
 
+/*Contact section*/
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 4;
+}
+.contact-section .group form{
+    flex: 6;
+}
+ .contact-section .group form{
+    display: flex;
+    flex-direction: column;
+ }
+ .contact-section .group form input,
+ .contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+ }
+ .contact-section .group form button{
+    padding: 15px;
+    background-color: var(--link-color);
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+ }
+ .contact-section .group form button:hover{
+    background-color:#764aee;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: scale(1.01);
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Responsiveness*/
 
 
 
@@ -224,6 +286,30 @@ nav .right a span{
     }
     .skills-section .cells .cell span{
         font-size: 16px;
+    }
+
+    /*testimony section*/
+    .testimony-section {
+        text-align: center;
+    }
+    .testimony-section .group{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    /*contact section*/
+    .contact-section{
+        padding: 0 20px;
+    }
+    .contact-section .group{
+        flex-direction: column;
+    }
+
+    .contact-section h2{
+        text-align: center;
+    }
+    .contact-section .group .text{
+        text-align: center;
     }
 }
 
