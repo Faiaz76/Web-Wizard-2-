@@ -1,7 +1,8 @@
 :root{
-    --text-color: #1a1c20;
-    --link-color: #4a76ee;
-    --background-color: #eeeff1; 
+    --text-color: black   ;
+    --link-color: #ffbf00 ; 
+    --background-color: #FFF8DC ; 
+    --nav-color: #FF6347  ;
 }
 
 *{
@@ -35,12 +36,12 @@ nav{
 }
 
 nav .left a{
-    color: var(--text-color);
+    color: var(--nav-color);
     font-size: 22px;
     font-weight: 600;
 }
 nav .right a{
-    color: var(--text-color);
+    color: var(--nav-color);
     margin: 0 10px;
 }
 
@@ -73,6 +74,10 @@ nav .right a span{
 
 .hero-section .text h2{
     font-size: 44px;
+    color: var(--text-color);
+}
+.hero-section .text p{
+    color: var(--text-color);
 }
 .hero-section .text .links{
     margin-top: 25px;
@@ -115,6 +120,10 @@ nav .right a span{
 .skills-section h2{
     text-align: center;
     font-size: 35px;
+    color: var(--text-color);
+}
+.skills-section .text{
+    color: var(--text-colorb);
 }
 .skills-section .text{
     text-align: center;
@@ -154,6 +163,14 @@ nav .right a span{
 .testimony-section h2{
     font-size: 35px;
     margin-bottom: 30px;
+    color: var(--text-color);
+}
+.testimony-section .group .person-details p{
+    color: var(--text-color);
+}
+
+.testimony-section .text{
+    color: var(--text-color);
 }
 .testimony-section .group {
     display: flex;
@@ -188,6 +205,10 @@ nav .right a span{
 .contact-section h2{
     font-size: 35px;
     margin-bottom: 30px;
+    color: var(--text-color);
+}
+.contact-section .group .text{
+    color: var(--text-color);
 }
 .contact-section .group{
     display: flex;
@@ -202,6 +223,9 @@ nav .right a span{
  .contact-section .group form{
     display: flex;
     flex-direction: column;
+ }
+ .contact-section form label{
+    color: var(--text-color);
  }
  .contact-section .group form input,
  .contact-section .group form textarea{
@@ -221,19 +245,13 @@ nav .right a span{
     font-family: 'Poppins', sans-serif;
  }
  .contact-section .group form button:hover{
-    background-color:#764aee;
+    background-color:#ff9500;
     cursor: pointer;
     transition: 0.3s ease;
     transform: scale(1.01);
  }
 
 /*Responsiveness*/
-
-
-
-
-
-
 
 
 
