@@ -106,7 +106,7 @@ nav .right a span{
     justify-content: right;
 }
 .hero-section .head-shot img{
-    border-radius: 50%;
+    border-radius: 30%;
     width: 390px;
 }
 
